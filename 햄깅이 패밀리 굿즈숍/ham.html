@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>햄깅이 굿즈 신청서</title>
+</head>
+<body>
+
+<h1>
+<b><legend>굿즈숍 방문 목적 조사</legend></b></h1>
+
+<fieldset>
+  <legend>기본 정보</legend>
+
+  <b>이름</b> <input type="text" id="name" required placeholder="햄깅이">
+  <br><br>
+
+  <b>연락처</b> <input type="text" id="phone" required placeholder="010-xxxx-xxxx">
+  <br><br>
+
+  <b>성별</b> 
+  <input type="radio" name="gender" id="male"> <label for="male">남자</label>
+  <input type="radio" name="gender" id="female"> <label for="female">여자</label>
+  <br><br>
+
+  <b>이메일</b> <input type="email" id="email" placeholder="hamgingee@hamging.ee">
+  <br><br>
+
+  <b>비밀번호</b> <input type="password" id="password">
+</fieldset>
+
+<fieldset>
+  <legend>상세 정보</legend>
+<b>가능 날짜</b> <input type="date" id="date" min="2026-03-23" max="2026-03-31" required>
+<br>
+<b>가능 시간</b> 
+<select id="time" required>
+  <option value="">시간 선택</option>
+  <option value="10:00">오전 10:00</option>
+  <option value="11:00">오전 11:00</option>
+  <option value="12:00">오후 12:00</option>
+  <option value="13:00">오후 01:00</option>
+  <option value="14:00">오후 02:00</option>
+  <option value="15:00">오후 03:00</option>
+  <option value="16:00">오후 04:00</option>
+  <option value="17:00">오후 05:00</option>
+  <option value="18:00">오후 06:00</option>
+  <option value="19:00">오후 07:00</option>
+  <option value="20:00">오후 08:00</option>
+</select>
+<br>
+<b>방문 목적</b> 
+<select id="목적" multiple size="1" required>
+<option value="">소장용</option>
+<option value="">선물용</option>
+<option value="">방문</option>
+</select>
+<br>
+
+<b>방문 수단</b> 
+<select id="수단" required>
+<option value="">차량</option>
+<option value="">대중교통</option>
+<option value="">도보</option>
+</select>
+<br>
+  </fieldset>
+
+<fieldset>
+<legend>좋아하는 캐릭터</legend>
+<img src="/토낑이.png">
+<input type="radio" name="character" value="tokking" id="char1">
+    <label for="char1">토낑이</label>
+<img src="/햄깅이.png">
+<input type="radio" name="character" value="tokking" id="char1">
+    <label for="char1">햄깅이</label>
+<img src="/햄둥이.png">
+<input type="radio" name="character" value="tokking" id="char1">
+    <label for="char1">햄둥이</label>
+</fieldset>
+<input type="submit" value="완료">
+<input type="reset" value="취소">
+</body>
+</html>
